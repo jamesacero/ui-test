@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'OstrichSans-Bold';
+  src:
+    url('fonts/OstrichSans-Bold.otf');
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'OstrichSans-Heavy';
+  src:
+    url('fonts/OstrichSans-Heavy.otf');
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src:
+    url('fonts/Montserrat-Bold.otf');
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src:
+    url('fonts/Montserrat-Regular.otf');
+    format('opentype');
+}
+
+::-webkit-input-placeholder {
+ font-family: "Montserrat-Bold", sans-serif;
+ color: #96cb9e;
+ text-align: center;
+}
+
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+  margin: 70px;
+  background-color: #1e4524;
+
+}
+
+h1 {
+  font-family: "OstrichSans-Bold", sans-serif;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: "OstrichSans-Heavy", sans-serif;
+  font-size: 50px;
+  color: black;
+}
+
+#rankings {
+  font-family: "OstrichSans-Heavy", sans-serif;
+  font-size: 40px;
+  color: black;
+  font-weight: 400;
+}
+
+.panel {
+    background-color: #55c666;
+    border-width: 10px;
+    border-color: #347a3f;
+    border-style: double;
+}
+
+.clicker {
+  -webkit-animation-delay: .3s;
+}

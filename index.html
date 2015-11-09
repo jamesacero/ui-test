@@ -1,21 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>EverQuoteTest</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset='utf-8'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css' rel='stylesheet'>
+    <link href='css/main.scss' rel='stylesheet'>
+    <link href="css/animate.css" rel='stylesheet'>
+    <script src="https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.css">
+    <title>Darts Scoreboard</title>
   </head>
+
   <body>
-    <h1>Rankings</h1>
-    <input type="text">
-    <br>
-    <button id="add">Add To Rankings</button>
+    <div class='panel container'>
+      <div class='header text-center'>
+        <h1>
+          Darts Scoreboard
+        </h1>
+      </div>
 
-    <ul id="rankings"></ul>
-    <button id="clear">Clear Rankings</button>
+      <div class='row'>
+        <div class='medium-4 medium-centered columns'>
+          <input id='user-name' class='text-center' placeholder='Name' type='text'>
+        </div>
+        <div class='medium-4 medium-centered columns'>
+          <input id='user-score' class='text-center' placeholder='Score' type='text'>
+        </div>
+      </div>
 
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.0.0/lodash.min.js"></script> -->
-    <script src="js/main.js"></script>
+      <div class='row'>
+        <div class='small-2 small-offset-2 medium-offset-4 columns'>
+          <input id='addScore' class='animated clicker bounceInLeft' height='70' width='130' src='target-text.png' type='image'>
+        </div>
+        <div class='small-6 medium-6 columns'>
+          <input id='clear' class='animated clicker bounceInRight' height='70' width='130' src='clear.png' type='image'>
+        </div>
+      </div>
+
+      <br>
+      <div class='row text-center'>
+        <div class='medium-6 medium-offset-3 columns'>
+          <ul id='rankings'></ul>
+        </div>
+        <div class='medium-3 columns'>
+        </div>
+      </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.0.0/lodash.min.js'></script>
+    <script src='js/main.js'></script>
   </body>
 </html>
