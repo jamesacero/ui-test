@@ -33,7 +33,7 @@ $('#clear').click(function () {
 
 // HELPER FUNCTIONS
 
-// Alerts user of empty field in form
+// Alerts user of empty or incorrect input in form field
 function empty() {
     var name = userName.val();
     var score = userScore.val();
@@ -43,6 +43,14 @@ function empty() {
     };
     if (score === "") {
       sweetAlert("Please enter a player score!", "Why don't you give yourself a perfect darts score of 180 for this round? Go on, you've probably earned it.", "error");
+      return false;
+    };
+    if (score < 0) {
+      sweetAlert("Please enter a positive number for the player score!", "There's no such thing as a negative score in darts! Maybe you're thinking of golf?", "error")
+      return false;
+    }
+    if (isNaN(score)) {
+      sweetAlert("Please enter a number for the player score!", "Darts is a game of numbers! A score of 'hamburger', for example, doesn't fly here. Sorry.", "error")
       return false;
     };
 }
