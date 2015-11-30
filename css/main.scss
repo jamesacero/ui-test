@@ -50,6 +50,12 @@ h2 {
   color: black;
 }
 
+h3 {
+  font-family: "OstrichSans-Bold", sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 #rankings {
   font-family: "OstrichSans-Heavy", sans-serif;
   font-size: 40px;
@@ -62,6 +68,7 @@ h2 {
     border-width: 10px;
     border-color: #347a3f;
     border-style: double;
+    width: 85%;
 }
 
 .clicker {
