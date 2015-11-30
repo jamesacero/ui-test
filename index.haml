@@ -2,28 +2,29 @@
 %html
   %head
     %meta{:charset => "utf-8"}/
-    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css", :rel => "stylesheet"}
-    %link{:href => "css/main.scss", :rel => "stylesheet"}
-    %link{:href => "css/animate.css", :rel => "stylesheet"}
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.scss", :rel => "stylesheet"}/
+    %link{:href => "css/animate.css", :rel => "stylesheet"}/
     %script{:src => "https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.min.js"}
-    %link{:href => "https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.css", :rel => "stylesheet", :type => "text/css"}/
     %title Darts Scoreboard
   %body
-    .panel.container
+    %main.panel.small-centered.columns.container
       .header.text-center
-        %h1
-          Darts Scoreboard
+        %h1.hide-for-small-only Darts Scoreboard
+        %h3.show-for-small-only Darts Scoreboard
       .row
         .medium-4.medium-centered.columns
-          %input#user-name.text-center{:placeholder => "Name", :type => "text"}
+          %input#user-name.text-center{:placeholder => "Name", :type => "text"}/
         .medium-4.medium-centered.columns
-          %input#user-score.text-center{:placeholder => "Score", :type => "text"}
+          %input#user-score.text-center{:placeholder => "Score", :type => "text"}/
       .row
-        .small-2.small-offset-2.medium-offset-4.columns
-          %input#addScore.animated.clicker.bounceInLeft{:height => "70", :src => "target-text.png", :type => "image", :width => "130"}
-        .small-6.medium-6.columns
-          %input#clear.animated.clicker.bounceInRight{:height => "70", :src => "clear.png", :type => "image", :width => "130"}
-      %br
+        .small-5.medium-2.small-centered.columns
+          %input#addScore.animated.clicker.bounceInLeft{:height => "70", :src => "target-text.png", :type => "image", :width => "130"}/
+      .row
+        .small-5.medium-2.small-centered.columns
+          %input#clear.animated.clicker.bounceInRight{:height => "70", :src => "clear.png", :type => "image", :width => "130"}/
+      %br/
       .row.text-center
         .medium-6.medium-offset-3.columns
           %ul#rankings
