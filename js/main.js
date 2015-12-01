@@ -38,19 +38,19 @@ function empty() {
     var name = userName.val();
     var score = userScore.val();
     if (name === "") {
-      sweetAlert("Please enter a player name!", "Check your birth certificate, or if you want to, just enter 'James'. I've always been partial to that name.", "error");
+      alert("Please enter a player name!");
       return false;
     };
     if (score === "") {
-      sweetAlert("Please enter a player score!", "Why don't you give yourself a perfect darts score of 180 for this round? Go on, you've probably earned it.", "error");
+      window.alert("Please enter a player score!");
       return false;
     };
     if (score < 0) {
-      sweetAlert("Please enter a positive number for the player score!", "There's no such thing as a negative score in darts! Maybe you're thinking of golf?", "error")
+      window.alert("Please enter a positive number for the player score!")
       return false;
     }
     if (isNaN(score)) {
-      sweetAlert("Please enter a number for the player score!", "Darts is a game of numbers! A score of 'hamburger', for example, doesn't fly here. Sorry.", "error")
+      window.alert("Please enter a number for the player score!")
       return false;
     };
 }
